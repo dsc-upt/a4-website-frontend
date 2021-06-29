@@ -4,14 +4,17 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
 
 
-
 @NgModule({
-  declarations: [
-    FooterComponent,
-    MenuComponent
+    declarations: [
+        FooterComponent,
+        MenuComponent
+    ],
+  exports: [
+    MenuComponent,
+    FooterComponent
   ],
-  imports: [
-    CommonModule
-  ]
+    imports: [
+        CommonModule
+    ]
 })
 export class SharedModule { }
