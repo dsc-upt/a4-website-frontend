@@ -1,0 +1,15 @@
+.footer {
+  bottom: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.hearth {
+  padding: 0 4px;
+  color: red;
+
+  &:hover {
+    transform: scale(1.20);
+  }
+}
