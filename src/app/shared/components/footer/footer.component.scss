@@ -1,10 +1,19 @@
 .footer {
   bottom: 0;
+}
+.social-media-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.padding-right{
+  padding-right: 20px;
+}
+.text{
   justify-content: center;
   display: flex;
   flex-direction: row;
 }
-
 .hearth {
   padding: 0 4px;
   color: red;
