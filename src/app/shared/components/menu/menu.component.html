@@ -2,8 +2,8 @@
   <div class='top-menu'>
     <div class='wrapper'>
       <img src="assets/A4%20alba.png" alt="">
-      <div *ngFor='let link of menuLinks' class="menuItem">
-        <div [routerLink]='link' class="circle" [ngStyle]="{'color': colorPick(link)}"></div>
+      <div *ngFor='let link of menuLinks, let i=index' class="menuItem">
+        <div [routerLink]='link' class="circle" [ngStyle]="{'background-color': colorPick[i]}"></div>
       </div>
     </div>
   </div>

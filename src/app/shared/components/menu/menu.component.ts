@@ -9,14 +9,7 @@ export class MenuComponent implements OnInit {
   menuLinks: string[]=[ 'contact' , 'about-us' ]
   constructor() { }
 
-  colorPick(element: string): string {
-    if (element === 'contact')
-      return '#DB4437';
-    else if (element === 'about-us')
-      return '#0F9D58';
-    else
-      return '#fff'
-  }
+  colorPick: string[]=['#DB4437','#0F9D58','#fff']
 
   ngOnInit(): void {
   }
