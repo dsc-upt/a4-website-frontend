@@ -1,13 +1,11 @@
-<div class="footer">
-  <div class="social-media-links">
-    <a  class="padding-right" href="https://www.facebook.com/asociatiadela4">f</a>
-    <a href="https://www.instagram.com/asociatiadela4/">i</a>
-  </div>
-    <div class="text">
-      <p>Make with </p>
-      <p class="hearth">❤</p>️
-      <p> by GDSC UPT Developers</p>
+<div class="container">
+  <div class="text">
+    <p>ASOCIAȚIA DE LA PATRU</p>
+    <div class="address">
+      <div *ngFor="let text of address">
+        {{text}}
+      </div>
     </div>
   </div>
-
-
+  <img src="./assets/images/A4 alba.png" class="logo-image" alt="image">
+</div>
