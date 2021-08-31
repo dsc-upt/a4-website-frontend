@@ -1,0 +1,56 @@
+.center {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  margin: 0 auto;
+  top: 5px;
+  @media (min-width: 500px) {
+    padding: 0 30px;
+  }
+  background: black;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img {
+  width: 15%;
+  padding: 25px;
+}
+
+.circle {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  @media (max-width: 900px) {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  padding: 8px 50px 5px;
+  @media (max-width: 900px) {
+    padding: 8px 25px 5px;
+  }
+}
