@@ -7,7 +7,6 @@ const routes: Routes = [{ path: '', component: ContactPageComponent }];
 
 @NgModule({
   declarations: [ContactPageComponent],
-  imports: [CommonModule, RouterModule.forChild(routes)]
+  imports: [CommonModule, RouterModule.forChild(routes)],
 })
-export class ContactPageModule {
-}
+export class ContactPageModule {}

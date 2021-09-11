@@ -16,9 +16,24 @@
       },
       "extends": [
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@angular-eslint/recommended--extra",
+        "airbnb-base",
+        "airbnb-typescript/base",
+        "prettier",
+        "plugin:prettier/recommended"
       ],
       "rules": {
+        "@angular-eslint/prefer-on-push-component-change-detection": "error",
+        "@angular-eslint/use-lifecycle-interface": "error",
+        "@angular-eslint/no-input-prefix": "error",
+        "@angular-eslint/no-input-rename": "error",
+        "@angular-eslint/no-output-on-prefix": "error",
+        "@angular-eslint/no-output-rename": "error",
+        "@angular-eslint/prefer-output-readonly": "error",
         "@angular-eslint/component-selector": [
           "error",
           {
@@ -42,6 +57,14 @@
           }
         ],
         "@typescript-eslint/member-ordering": "error",
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/lines-between-class-members": "off",
+        "@typescript-eslint/unbound-method": [
+          "error",
+          {
+            "ignoreStatic": true
+          }
+        ],
         "@typescript-eslint/naming-convention": [
           "error",
           {
@@ -93,6 +116,9 @@
             "leadingUnderscore": "require"
           }
         ],
+        "import/prefer-default-export": "off",
+        "no-underscore-dangle": "off",
+        "class-methods-use-this": "off",
         "max-len": [
           "error",
           {
@@ -108,15 +134,15 @@
             "SwitchCase": 0
           }
         ],
-        "quotes": [
-          "error",
-          "single"
-        ],
         "arrow-parens": [
           "error",
           "as-needed"
         ]
-      }
+      },
+      "plugins": [
+        "@angular-eslint/eslint-plugin",
+        "@typescript-eslint"
+      ]
     },
     {
       "files": [
@@ -125,7 +151,10 @@
       "extends": [
         "plugin:@angular-eslint/template/recommended"
       ],
-      "rules": {}
+      "rules": {},
+      "plugins": [
+        "prettier"
+      ]
     }
   ]
 }
