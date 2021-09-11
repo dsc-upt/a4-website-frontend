@@ -1,11 +1,12 @@
+@use "src/styles";
+
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   bottom: 1px;
-  background-color: black;
-  border: 1px solid white;
+  background-color: styles.$A4-black;
   padding: 22px 42px;
   @media (max-width: 500px) {
     padding: 22px 18px;
@@ -13,7 +14,7 @@
 }
 
 .text {
-  color: white;
+  color: styles.$A4-white;
 }
 
 p {

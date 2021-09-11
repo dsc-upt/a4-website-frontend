@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+$A4-black: #000000;
+$A4-white: #FFFFFF;
+
+body {
+  margin: 15px;
+  background: black;
+  border: 2px solid white;
+}
