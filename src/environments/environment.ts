@@ -4,9 +4,9 @@
 
 import { IEnvironment } from './environment.interface';
 
-export const environment : IEnvironment = {
+export const environment: IEnvironment = {
   production: false,
-  apiUrl: ''
+  apiUrl: '/api/',
 };
 
 /*

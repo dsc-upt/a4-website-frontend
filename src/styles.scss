@@ -6,15 +6,13 @@
 *,
 *::before,
 *::after {
+  background: variables.$black;
   box-sizing: border-box;
+  color: variables.$white;
 }
 
 html,
 body {
   height: 100%;
   margin: 0;
-}
-
-body {
-  background: variables.$black;
 }

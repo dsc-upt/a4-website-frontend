@@ -1,62 +1,26 @@
 @use 'variables';
-
-.center {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.top-menu {
-  align-items: center;
-  background: variables.$black;
-  color: variables.$white;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  position: fixed;
-  border-style: solid;
-  border-color: white;
-  width: 99%;
-  z-index: 10;
-  top: 5px;
-  background: black;
-  color: white;
-}
+@use 'breakpoints';
 
 .wrapper {
-  display: flex;
-  flex-direction: row;
+  position: fixed;
+  top: 5px;
 }
 
 .logo {
-  width: 15%;
+  object-fit: contain;
   padding: 25px;
-  border-right: solid;
-  border-color: white;
-  margin-right: 150px;
-}
-
-.circle {
-  background-color: variables.$white;
-  border-radius: 50%;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  @media (max-width: 900px) {
-    height: 40px;
-    width: 40px;
-  }
+  width: 100%;
 }
 
 .menu-item {
-  align-items: center;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 8px 30px 5px;
-  @media (max-width: 900px) {
-    padding: 8px 15px 5px;
+  height: 100%;
+  padding: 8px 15px 5px;
+}
+
+@include breakpoints.media(breakpoints.$medium) {
+  .menu-item {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

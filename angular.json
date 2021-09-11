@@ -82,7 +82,7 @@
               ],
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": true,
               "namedChunks": true,
               "extractLicenses": true,
               "vendorChunk": true,
@@ -101,12 +101,11 @@
               ]
             },
             "local": {
-              "optimization": true,
-              "outputHashing": "all",
+              "buildOptimizer": false,
+              "optimization": false,
               "sourceMap": true,
               "namedChunks": true,
               "vendorChunk": true,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -121,7 +120,7 @@
               ]
             }
           },
-          "defaultConfiguration": "dev"
+          "defaultConfiguration": "local"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",

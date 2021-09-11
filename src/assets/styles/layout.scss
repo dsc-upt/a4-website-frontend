@@ -1,3 +1,5 @@
+@use 'variables';
+
 .d-flex,
 .d-flex-column {
   display: flex;
@@ -13,4 +15,30 @@
 
 .align-items-center {
   align-items: center;
+}
+
+@mixin border($stroke: 1px, $position: null) {
+  $_border: $stroke solid variables.$white;
+
+  @if $position {
+    border-#{$position}: $_border;
+  } @else {
+    border: $_border;
+  }
+}
+
+.border-3 {
+  @include border(3px);
+}
+
+.border-2 {
+  @include border(2px);
+}
+
+.border-inline-end-0 {
+  @include border(0, 'inline-end');
+}
+
+.border-inline-start-2 {
+  @include border(2px, 'inline-start'); // border-left: 2px solid white
 }

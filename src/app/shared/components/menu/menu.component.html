@@ -1,10 +1,15 @@
-<div class='center'>
-  <div class='top-menu'>
-    <div class='wrapper'>
-      <img class="logo" src="assets/A4-logo.png" alt="">
-      <div *ngFor='let item of menuItems' class="menuItem">
-        <img [src]='item.image' [routerLink]='item.link' alt="">
-      </div>
-    </div>
+<div class="wrapper d-flex">
+  <div class="border-3 border-inline-end-0">
+    <img alt="A4 Logo" class="logo" src="assets/A4-logo.png" />
+  </div>
+
+  <div class="border-3 border-inline-start-2 d-flex space-between-content">
+    <img
+      *ngFor="let item of menuItems"
+      [routerLink]="item.link"
+      [src]="item.image"
+      alt=""
+      class="menu-item"
+    />
   </div>
 </div>
