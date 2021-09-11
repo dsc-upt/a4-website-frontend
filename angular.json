@@ -99,6 +99,26 @@
                   "maximumError": "20kb"
                 }
               ]
+            },
+            "local": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": true,
+              "namedChunks": true,
+              "vendorChunk": true,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "10kb",
+                  "maximumError": "20kb"
+                }
+              ]
             }
           },
           "defaultConfiguration": "dev"
@@ -106,14 +126,17 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-              "browserTarget": "a4-website-frontend:build:production"
+            "master": {
+              "browserTarget": "a4-website-frontend:build:master"
             },
-            "development": {
-              "browserTarget": "a4-website-frontend:build:development"
+            "dev": {
+              "browserTarget": "a4-website-frontend:build:dev"
+            },
+            "local": {
+              "browserTarget": "a4-website-frontend:build:local"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "local"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
