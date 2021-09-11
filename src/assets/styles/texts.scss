@@ -1,0 +1,10 @@
+@use 'variables';
+
+.text-white {
+  color: variables.$white;
+}
+
+.text-small {
+  font-size: 0.8rem;
+  font-weight: 100;
+}

@@ -1,20 +1,14 @@
 @use 'variables';
+@use 'breakpoints';
 
 .container {
-  align-items: center;
   background-color: variables.$black;
   bottom: 1px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 22px 42px;
-  @media (max-width: 500px) {
+
+  @include breakpoints.media(breakpoints.$small) {
     padding: 22px 18px;
   }
-}
-
-.text {
-  color: variables.$white;
 }
 
 p {
@@ -22,26 +16,17 @@ p {
   font-size: 13px;
   font-weight: bold;
   padding-bottom: 10px;
-
-  @media (max-width: 500px) {
-    font-size: 11px;
-  }
-
   word-spacing: -4px;
-}
 
-.address {
-  flex-direction: column;
-  font-size: 11px;
-  font-weight: 100;
-  @media (max-width: 500px) {
-    font-size: 9px;
+  @include breakpoints.media(breakpoints.$small) {
+    font-size: 11px;
   }
 }
 
 .logo-image {
   width: 129px;
-  @media (max-width: 500px) {
+
+  @include breakpoints.media(breakpoints.$small) {
     width: 105px;
   }
 }

@@ -1,11 +1,10 @@
-<div class="container">
-  <div class="text">
+<div class="container d-flex space-between-content align-items-center">
+  <div class="text-white d-flex-column">
     <p>ASOCIAȚIA DE LA PATRU</p>
-    <div class="address">
-      <div *ngFor="let text of address">
-        {{ text }}
-      </div>
-    </div>
+    <span *ngFor="let text of address" class="text-small">
+      {{ text }}
+    </span>
   </div>
+
   <img alt="image" class="logo-image" src="./assets/images/A4 alba.png" />
 </div>
