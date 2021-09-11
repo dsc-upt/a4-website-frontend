@@ -1,0 +1,11 @@
+version: "3.1"
+
+services:
+  frontend:
+    build:
+      context: .
+      args:
+        - BRANCH=dev
+    ports:
+      - "8040:80"
+    restart: always
