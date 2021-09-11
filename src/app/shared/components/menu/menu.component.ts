@@ -7,26 +7,25 @@ import { MenuItem } from '../../../models/menu-items';
   styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent {
-  menuLinks: string[]=[ 'contact' , 'about-us' ]
 
-  menuItems: MenuItem[] = [{
-    image: 'assets/icons-01%201.png',
-    link: 'http://localhost:4200/contact'
+  menuItems : MenuItem[] = [{
+    image: 'assets/icons/icons-01.png',
+    link: '/contact'
   },
     {
-      image: 'assets/icons-03%201.png',
-      link: 'http://localhost:4200/about-us'
+      image: 'assets/icons/icons-03.png',
+      link: '/about-us'
     },
     {
-      image: 'assets/icons-05%201.png',
+      image: 'assets/icons/icons-05.png',
       link: ''
     },
     {
-      image: 'assets/icons-07%201.png',
+      image: 'assets/icons/icons-07.png',
       link: ''
     },
     {
-      image: 'assets/icons-09%201.png',
+      image: 'assets/icons/icons-09.png',
       link: ''
     }]
 }

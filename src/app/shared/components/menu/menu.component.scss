@@ -17,12 +17,11 @@
   position: fixed;
   border-style: solid;
   border-color: white;
-  width: 95%;
+  width: 99%;
   z-index: 10;
   top: 5px;
-  @media (min-width: 500px) {
-    padding: 0 30px;
-  }
+  background: black;
+  color: white;
 }
 
 .wrapper {
