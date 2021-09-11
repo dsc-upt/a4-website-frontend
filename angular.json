@@ -33,7 +33,7 @@
             "inlineStyleLanguage": "scss",
             "stylePreprocessorOptions": {
               "includePaths": [
-                "./src/assets/assets/styles"
+                "./src/assets/styles"
               ]
             },
             "assets": [

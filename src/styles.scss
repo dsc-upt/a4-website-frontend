@@ -1,10 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'variables';
 
-$A4-black: #000000;
-$A4-white: #FFFFFF;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
 
 body {
-  margin: 15px;
-  background: black;
-  border: 2px solid white;
+  background: variables.$black;
 }
