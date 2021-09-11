@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
     "analytics": false,
-    "defaultCollection": "@angular-eslint/schematics"
+    "defaultCollection": "@angular-eslint/schematics",
+    "packageManager": "npm"
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -30,6 +31,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./src/assets/assets/styles"
+              ]
+            },
             "assets": [
               "src/favicon.ico",
               "src/assets"
