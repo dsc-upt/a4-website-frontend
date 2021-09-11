@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuItem } from '../../../models/menu-items';
 
 @Component({
   selector: 'app-menu',
@@ -6,7 +7,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent {
-  menuLinks: string[] = ['contact', 'about-us'];
+  menuLinks: string[]=[ 'contact' , 'about-us' ]
 
-  colorPick: string[] = ['#DB4437', '#0F9D58', '#fff'];
+  menuItems: MenuItem[] = [{
+    image: 'assets/icons-01%201.png',
+    link: 'http://localhost:4200/contact'
+  },
+    {
+      image: 'assets/icons-03%201.png',
+      link: 'http://localhost:4200/about-us'
+    },
+    {
+      image: 'assets/icons-05%201.png',
+      link: ''
+    },
+    {
+      image: 'assets/icons-07%201.png',
+      link: ''
+    },
+    {
+      image: 'assets/icons-09%201.png',
+      link: ''
+    }]
 }
