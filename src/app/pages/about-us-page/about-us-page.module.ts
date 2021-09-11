@@ -7,7 +7,6 @@ const routes: Routes = [{ path: '', component: AboutUsPageComponent }];
 
 @NgModule({
   declarations: [AboutUsPageComponent],
-  imports: [CommonModule, RouterModule.forChild(routes)]
+  imports: [CommonModule, RouterModule.forChild(routes)],
 })
-export class AboutUsPageModule {
-}
+export class AboutUsPageModule {}
