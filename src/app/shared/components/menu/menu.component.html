@@ -1,9 +1,9 @@
+<div class="center">
 <div class="wrapper d-flex">
-  <div class="border-3 border-inline-end-0">
-    <img alt="A4 Logo" class="logo" src="assets/A4-logo.png" />
-  </div>
+    <img class="border-3 border-inline-end-0 logo" alt="A4 Logo" src="assets/A4-logo.png" />
 
   <div class="border-3 border-inline-start-2 d-flex space-between-content">
+    <div class="space-left"></div>
     <img
       *ngFor="let item of menuItems"
       [routerLink]="item.link"
@@ -11,5 +11,7 @@
       alt=""
       class="menu-item"
     />
+    <div class="space-right"></div>
   </div>
+</div>
 </div>

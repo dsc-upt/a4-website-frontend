@@ -3,24 +3,38 @@
 
 .wrapper {
   position: fixed;
-  top: 5px;
+  top: 25px;
+  height: 150px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
   object-fit: contain;
   padding: 25px;
-  width: 100%;
 }
 
 .menu-item {
   cursor: pointer;
   height: 100%;
-  padding: 8px 15px 5px;
+  padding: 8px 10px 5px;
+}
+
+.space-left {
+  margin-left: 175px;
+}
+
+.space-right {
+  margin-right: 175px;
 }
 
 @include breakpoints.media(breakpoints.$medium) {
   .menu-item {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
