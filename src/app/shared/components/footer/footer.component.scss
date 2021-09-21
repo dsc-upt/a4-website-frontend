@@ -1,31 +1,40 @@
-@use 'variables';
 @use 'breakpoints';
 
 .container {
-  bottom: 1px;
-  padding: 22px 42px;
-
-  @include breakpoints.media(breakpoints.$small) {
-    padding: 22px 18px;
-  }
-}
-
-p {
-  font-family: 'Lucida Console', monospace;
-  font-size: 13px;
-  font-weight: bold;
-  padding-bottom: 10px;
-  word-spacing: -4px;
-
-  @include breakpoints.media(breakpoints.$small) {
-    font-size: 11px;
-  }
+  bottom: 2px;
+  padding: 17px 21px;
 }
 
 .logo-image {
-  width: 129px;
+  width: 90px;
+}
 
-  @include breakpoints.media(breakpoints.$small) {
-    width: 105px;
+p {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+div{
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 8px;
+}
+
+@include breakpoints.media(breakpoints.$small) {
+  .logo-image{
+    width: 129px;
+  }
+  .container{
+    padding: 20px 26px;
+  }
+  p{
+    font-weight: 600;
+    font-size: 16px;
+  }
+  div{
+    font-weight: 400;
+    font-size: 11px;
   }
 }
