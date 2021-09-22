@@ -1,22 +1,33 @@
 @use 'variables';
 
-#center {
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  margin-bottom: 104px;
   text-align: center;
-  margin-bottom: 10%;
-}
-
-.contain {
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 12.5%;
-  padding: 5% 5% 5% 5%;
 }
 
 p {
   color: variables.$white;
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-i{
+em {
   opacity: 0.5;
+}
+
+.about-us {
+  max-width: 1065px;
+  padding-bottom: 62px;
+  padding-top: 62px;
+}
+
+.body {
+  padding-left: 125px;
+  padding-right: 125px;
+}
+
+.container {
+  padding-bottom: 52px;
+  padding-top: 52px;
 }

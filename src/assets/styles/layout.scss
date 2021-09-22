@@ -35,6 +35,14 @@
   @include border(3px);
 }
 
+.border-inline-start-3 {
+  @include border(3px, 'inline-start');
+}
+
+.border-inline-end-3 {
+  @include border(3px, 'inline-end');
+}
+
 .border-2 {
   @include border(2px);
 }
