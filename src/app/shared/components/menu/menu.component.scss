@@ -3,9 +3,7 @@
 
 .wrapper {
   height: 150px;
-  padding: 28px;
-  position: fixed;
-  top: 0;
+  padding-top: 28px;
 }
 
 .logo {
@@ -21,11 +19,4 @@
 
 .menu-items {
   gap: 20px;
-}
-
-@include breakpoints.media(breakpoints.$medium) {
-  .menu-item {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
