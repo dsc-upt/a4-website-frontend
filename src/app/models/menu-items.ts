@@ -1,6 +1,6 @@
 export interface MenuItem{
   src: string;
   image: string;
-  hover: string;
+  imageOnHover: string;
   link: string;
 }
