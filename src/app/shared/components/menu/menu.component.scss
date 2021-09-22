@@ -2,15 +2,10 @@
 @use 'breakpoints';
 
 .wrapper {
-  position: fixed;
-  top: 25px;
   height: 150px;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 28px;
+  position: fixed;
+  top: 0;
 }
 
 .logo {
@@ -24,12 +19,8 @@
   padding: 8px 10px 5px;
 }
 
-.space-left {
-  margin-left: 175px;
-}
-
-.space-right {
-  margin-right: 175px;
+.menu-items {
+  gap: 20px;
 }
 
 @include breakpoints.media(breakpoints.$medium) {

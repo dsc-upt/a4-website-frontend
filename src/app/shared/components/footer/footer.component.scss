@@ -3,11 +3,6 @@
 
 .container {
   bottom: 1px;
-  padding: 22px 42px;
-
-  @include breakpoints.media(breakpoints.$small) {
-    padding: 22px 18px;
-  }
 }
 
 p {
