@@ -14,6 +14,6 @@
 
 html,
 body {
-  height: 100%;
+  height: calc(100% - variables.$menu-height);
   margin: 0;
 }
