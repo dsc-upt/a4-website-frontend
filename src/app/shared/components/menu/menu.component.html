@@ -5,7 +5,9 @@
     <img
       *ngFor="let item of menuItems"
       [routerLink]="item.link"
-      [src]="item.image"
+      [src]="item.src"
+      (mouseover)="item.src = item.hover"
+      (mouseout)="item.src = item.image"
       alt=""
       class="menu-item"
     />
