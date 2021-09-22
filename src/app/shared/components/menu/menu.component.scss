@@ -6,6 +6,12 @@
   padding-top: 28px;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
   object-fit: contain;
   padding: 25px;
