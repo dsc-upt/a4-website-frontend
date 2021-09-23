@@ -1,0 +1,22 @@
+<div class="container border-3 border-block-start-0 d-flex content-center">
+  <div class="border-3 carousel">
+    <div *ngFor="let article of articles; let i = index">
+      <img
+        *ngIf="number === i"
+        @carouselAnimation
+        [routerLink]="articles[number].link"
+        [src]="articles[number].image"
+        alt=""/>
+    </div>
+    <div class="d-flex content-center">
+      <div *ngFor="let article of articles; let i = index">
+        <div
+          (click)="number = i"
+          @carouselAnimation
+          [class.circle-yellow]="number === i"
+          class="circle"
+        ></div>
+      </div>
+    </div>
+  </div>
+</div>

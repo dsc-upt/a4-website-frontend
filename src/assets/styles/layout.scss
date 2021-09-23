@@ -43,6 +43,14 @@
   @include border(3px, 'inline-end');
 }
 
+.border-block-start-0 {
+  @include border(0, 'block-start');
+}
+
+.border-block-end-3 {
+  @include border(3px, 'block-end');
+}
+
 .border-2 {
   @include border(2px);
 }

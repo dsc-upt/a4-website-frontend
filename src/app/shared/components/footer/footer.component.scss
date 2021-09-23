@@ -16,24 +16,24 @@ p {
   margin-top: 0;
 }
 
-div{
+div {
   font-family: Open Sans;
   font-weight: 400;
   font-size: 8px;
 }
 
 @include breakpoints.media(breakpoints.$small) {
-  .logo-image{
+  .logo-image {
     width: 129px;
   }
-  .container{
+  .container {
     padding: 20px 26px;
   }
-  p{
+  p {
     font-weight: 600;
     font-size: 16px;
   }
-  div{
+  div {
     font-weight: 400;
     font-size: 11px;
   }

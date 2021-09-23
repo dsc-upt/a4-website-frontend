@@ -3,9 +3,15 @@ $medium: 'medium';
 $large: 'large';
 
 $_breakpoints: (
-  #{$small}: (min-width: 767px),
-  #{$medium}: (min-width: 992px),
-  #{$large}: (min-width: 1200px)
+  #{$small}: (
+      min-width: 767px,
+    ),
+  #{$medium}: (
+      min-width: 992px,
+    ),
+  #{$large}: (
+      min-width: 1200px,
+    )
 ) !default;
 
 /// Mixin to manage responsive breakpoints
@@ -20,7 +26,7 @@ $_breakpoints: (
     }
   }
 
-    /// If the key doesn't exist in the map
+  /// If the key doesn't exist in the map
   @else {
     @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
       + 'Available breakpoints are: #{map-keys($_breakpoints)}.';
