@@ -9,10 +9,17 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
+  cursor: pointer;
   background-color: variables.$white;
 }
 
 .circle-yellow {
+  cursor: pointer;
   background-color: #FFFF00;
+}
+
+img {
+  cursor: pointer;
+  position: fixed;
 }
 

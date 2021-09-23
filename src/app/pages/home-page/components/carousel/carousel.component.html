@@ -1,9 +1,11 @@
-<div class="container border-inline-end-3 border-inline-start-3 d-flex content-center">
+<div class="container border-3 border-block-start-0 d-flex content-center">
   <div class="border-3">
-    <img src="{{articles[number].image}}" routerLink="{{articles[number].link}}">
+    <div *ngFor="let article of articles,let i = index">
+    <img *ngIf="number===i" [src]=articles[number].image [routerLink]=articles[number].link @carouselAnimation>
+    </div>
     <div class="d-flex content-center">
       <div *ngFor="let article of articles,let i = index">
-        <div class="circle" (click)="number=i" [class.circle-yellow]="number===i" ></div>
+        <div class="circle" (click)="number=i" [class.circle-yellow]="number===i" @carouselAnimation></div>
       </div>
     </div>
   </div>
