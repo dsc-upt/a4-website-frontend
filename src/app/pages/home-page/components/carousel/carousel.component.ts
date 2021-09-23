@@ -7,10 +7,15 @@ import { Articles } from '../../../../models/articles';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent {
-  article: Articles[] = [{
-    image: 'assets/images/Frame 2',
+  number = 0;
+  articles: Articles[] = [{
+    image: './assets/images/Frame 2.svg',
     link: '/about-us'
-  }
+  },
+    {
+      image: './assets/images/photo 02.svg',
+      link: '/about-us'
+    }
   ]
 
 }

@@ -1,4 +1,18 @@
+@use 'variables';
+
 .container {
   padding-bottom: 52px;
   padding-top: 52px;
 }
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: variables.$white;
+}
+
+.circle-yellow {
+  background-color: #FFFF00;
+}
+
