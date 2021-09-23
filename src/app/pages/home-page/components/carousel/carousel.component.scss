@@ -1,23 +1,47 @@
 @use 'variables';
+@use 'breakpoints';
 
 .container {
-  padding-bottom: 52px;
-  padding-top: 52px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .circle {
-  width: 15px;
-  height: 15px;
   border-radius: 50%;
   cursor: pointer;
+  width: 12px;
+  height: 12px;
   background-color: variables.$white;
+  margin: 10px 10px 12px;
 }
 
 .circle-yellow {
-  cursor: pointer;
-  background-color: #ffff00;
+  background-color: variables.$yellow !important;
 }
 
 img {
+  width: 100%;
   cursor: pointer;
+}
+
+.carousel {
+  padding: 12px 14px 0;
+}
+
+
+@include breakpoints.media(breakpoints.$small) {
+  .container {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+  .carousel {
+    padding: 52px 57px 0;
+    max-width: 1065px;
+  }
+  .circle {
+    width: 15px;
+    height: 15px;
+    background-color: variables.$white;
+    margin: 15px 6px 21px;
+  }
 }
