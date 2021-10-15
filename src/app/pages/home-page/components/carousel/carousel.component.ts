@@ -15,6 +15,7 @@ import { Articles } from '../../../../models/articles';
 })
 export class CarouselComponent {
   number = 0;
+  i = 0;
   articles: Articles[] = [
     {
       image: './assets/images/Frame 2.svg',
@@ -45,4 +46,17 @@ export class CarouselComponent {
       link: '/about-us',
     },
   ];
+
+  constructor() {
+    this._changeSlide();
+  }
+
+  private _changeSlide() {
+    setInterval(() => {
+      if (this.number + 1 !== this.articles.length) this.number += 1;
+      else {
+        this.number = 0;
+      }
+    }, 4000);
+  }
 }
