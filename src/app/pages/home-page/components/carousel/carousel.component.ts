@@ -54,9 +54,7 @@ export class CarouselComponent {
   private _changeSlide() {
     setInterval(() => {
       if (this.number + 1 !== this.articles.length) this.number += 1;
-      else {
-        this.number = 0;
-      }
+      else this.number = 0;
     }, 4000);
   }
 }
