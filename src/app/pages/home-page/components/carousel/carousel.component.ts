@@ -16,6 +16,7 @@ import { Articles } from '../../../../models/articles';
 export class CarouselComponent {
   number = 0;
   i = 0;
+  carouselInterval: NodeJS.Timer | undefined;
   articles: Articles[] = [
     {
       image: './assets/images/Frame 2.svg',
@@ -51,8 +52,13 @@ export class CarouselComponent {
     this._changeSlide();
   }
 
+  resetCarousel(): void {
+    clearInterval(<NodeJS.Timeout>this.carouselInterval);
+    this._changeSlide();
+  }
+
   private _changeSlide() {
-    setInterval(() => {
+    this.carouselInterval = setInterval(() => {
       if (this.number + 1 !== this.articles.length) this.number += 1;
       else this.number = 0;
     }, 4000);

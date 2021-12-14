@@ -11,7 +11,7 @@
     <div class="d-flex content-center">
       <div *ngFor="let article of articles; let i = index">
         <div
-          (click)="number = i"
+          (click)="number = i;resetCarousel()"
           @carouselAnimation
           [class.circle-yellow]="number === i"
           class="circle"
